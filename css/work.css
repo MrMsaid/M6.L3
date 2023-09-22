@@ -6,7 +6,7 @@
   --tbs-div-h: default;
 
   --tbs-fjc: space-between;
-  --press-line-display: default;
+  --press-line-display: block;
 }
 
 .header-img-container {
@@ -103,6 +103,7 @@
 }
 
 #products-bg {
+  display: var(--press-line-display);
   background-image: url("../images/IMG_0420.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -125,19 +126,19 @@
 
 .pic-text__img1 {
   transform: scale(1.2, 1.5);
-  z-index: 1;
   filter: blur(10px);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .pic-text__img2 {
   transform: scale(1);
+  filter: blur(1px);
   margin-left: -430px;
-  z-index: 1;
   transition: 0.5s;
 }
 
 .pic-text__img2:hover {
+  filter: blur(0px);
   transform: scale(1.1);
   cursor: pointer;
 }

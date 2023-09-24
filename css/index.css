@@ -283,7 +283,7 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
   height: 48px;
   padding-top: 25px;
 
-  font-size: var(--fetured-font-size);
+  font-size: var(--featured-font-size);
 
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -452,17 +452,18 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --email-padding: 10px;
     --email-font-size: 14px;
     --email-icon-size: 14px;
+    --featured-font-size: 10px;
     --iii: 25px 0 0 0;
     --iii1: 25px 0 0 0;
-    --iii-size: 200px;
-    --to-up-height: 50px;
-    --to-up-width: 50px;
-    --to-up-font-size: 20px;
+    --iii-size: 90vw;
+    --to-up-height: 35px;
+    --to-up-width: 35px;
+    --to-up-font-size: 15px;
     --ve-img-size: 11em;
     --footer-padding: 18px;
-    --copyright-font-size: 0.2em;
+    --copyright-font-size: 0.5em;
     --links-padding: 1px;
-    --links-img-size: 10px;
+    --links-img-size: 12px;
 
     /* visibility */
     --logo-text: none;
@@ -485,16 +486,17 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --description: 16px;
     --email-container-size: 70vw;
     --email-padding: 10px;
-    --email-font-size: 20px;
+    --email-font-size: 15px;
     --email-icon-size: 6vh;
     --iii: 25px 0 0 0;
     --iii1: 25px 0 0 0;
-    --iii-size: 280px;
+    --iii-size: 90vw;
     --to-up-height: 50px;
     --to-up-width: 50px;
     --to-up-font-size: 20px;
     --ve-img-size: 16em;
-    --copyright-font-size: 0.7em;
+    --copyright-font-size: 0.6em;
+    --links-img-size: 16px;
     --links-padding: 5px;
 
     --home-text: none;
@@ -513,7 +515,7 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
   }
 }
 
-@media (min-width: 570px) {
+@media (min-width: 550px) {
   :root {
     --sun-size: 4vw;
     --navbar-text-margin: 19px;
@@ -522,18 +524,20 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --head-size: 28px;
     --description: 16px;
     --email-container-size: 70vw;
-    --email-padding: 10px;
-    --email-font-size: 15px;
-    --email-icon-size: 3vh;
+    --email-padding: 15px;
+    --email-font-size: 20px;
+    --email-icon-size: 8vh;
     --iii: 25px 0 0 0;
     --iii1: 25px 0 0 0;
-    --iii-size: 280px;
+    --iii-size: 90vw;
     --to-up-height: 50px;
     --to-up-width: 50px;
     --to-up-font-size: 20px;
     --ve-img-size: 28em;
+    --featured-font-size: 20px;
     --copyright-font-size: 0.7em;
-    --links-padding: 5px;
+    --links-img-size: 15px;
+    --links-padding: 10px;
 
     --logo-text: none;
 
@@ -557,9 +561,9 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --email-padding: 0;
     --email-font-size: 15px;
     --email-icon-size: 3vh;
-    --iii: 25px 0 0 0;
-    --iii1: 25px 0 0 0;
-    --iii-size: 350px;
+    --iii: 75px 400px 0 0;
+    --iii1: 75px 0 0 400px;
+    --iii-size: 500px;
     --to-up-height: 50px;
     --to-up-width: 50px;
     --to-up-font-size: 20px;

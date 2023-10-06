@@ -146,8 +146,8 @@ body {
   background-color: #000;
 }
 
-body:has(.sun-moon-container):has(#sun-moon:checked),
-body:has(.sun-moon-container):has(#sun-moon:checked) * {
+body:has(#sun-moon:checked),
+body:has(#sun-moon:checked) * {
   color: #252525;
   --color: #252525;
   --main-color: #bbbbbb;
@@ -445,7 +445,6 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --navbar-font-size: 15px;
     --navbar-text-margin: 9px;
     --main-padding: 10% 5% 0 5%;
-    --home-text: none;
     --head-size: 19px;
     --description: 10px;
     --email-container-size: 70vw;
@@ -467,6 +466,7 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
 
     /* visibility */
     --logo-text: none;
+    --home-text: none;
 
     /* align of items */
     --text-align: center;
@@ -520,7 +520,6 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --sun-size: 4vw;
     --navbar-text-margin: 19px;
     --main-padding: 10% 5% 0 5%;
-    --home-text: none;
     --head-size: 28px;
     --description: 16px;
     --email-container-size: 70vw;
@@ -540,6 +539,7 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --links-padding: 10px;
 
     --logo-text: none;
+    --home-text: none;
 
     --text-align: center;
     --fetured-jus-con: center;
@@ -554,7 +554,6 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --sun-size: 2vw;
     --navbar-text-margin: 19px;
     --main-padding: 10% 5% 0 5%;
-    --home-text: none;
     --head-size: 30px;
     --description: 18px;
     --email-container-size: 70vw;
@@ -572,7 +571,8 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --links-padding: 5px;
 
     /* visibility */
-    --logo-text: none;
+    --logo-text: visible;
+    --home-text: visible;
 
     /* align of items */
     --text-align: center;
@@ -582,10 +582,44 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   :root {
     --sun-size: 2vw;
     --navbar-text-margin: 38px;
+    --main-padding: 10% 10% 0 10%;
+    --head-size: 93px;
+    --description: 33px;
+    --email-container-size: 30vw;
+    --email-padding: 4%;
+    --email-font-size: 27px;
+    --email-icon-size: 4vh;
+    --featured-font-size: 18px;
+    --iii: 75px 400px 0 0;
+    --iii1: 75px 0 0 400px;
+    --iii-size: none;
+    --to-up-height: 10vh;
+    --to-up-width: 5vw;
+    --to-up-font-size: 30px;
+    --ve-img-size: 50em;
+    --copyright-font-size: 0.7em;
+    --links-img-size: 20px;
+    --links-padding: 10px;
+
+    --logo-text: visible;
+    --home-text: visible;
+
+    --text-align: start;
+    --fetured-jus-con: start;
+    --email-link-jus-con: start;
+    --display: flex;
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    --sun-size: 2vw;
+    --navbar-text-margin: 38px;
+    --navbar-font-size: 25px;
     --main-padding: 10% 10% 0 10%;
     --head-size: 96px;
     --description: 36px;
@@ -601,7 +635,8 @@ body:has(.sun-moon-container):has(#sun-moon:checked) * {
     --to-up-width: 5vw;
     --to-up-font-size: 30px;
     --ve-img-size: 50em;
-    --copyright-font-size: 1em;
+    --copyright-font-size: 0.7em;
+    --links-img-size: 20px;
     --links-padding: 10px;
 
     --logo-text: visible;

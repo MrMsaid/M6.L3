@@ -23,6 +23,9 @@
 
     /* sizes */
     --sun-size: 2vw;
+    --header-height: 80px;
+    --logo-img: 1.5em;
+    --logo-text-size: 1em;
     --navbar-font-size: 20px;
     --navbar-text-margin: 38px;
     --main-padding: 10% 10% 0 10%;
@@ -31,19 +34,19 @@
     --email-container-size: 30vw;
     --email-padding: 4%;
     --email-font-size: 27px;
-    --email-icon-size: 4vh;
+    --email-icon-size: 8vw;
     --featured-font-size: 18px;
     --iii: 75px 400px 0 0;
     --iii1: 75px 0 0 400px;
     --iii-size: none;
-    --to-up-height: 10vh;
-    --to-up-width: 5vw;
-    --to-up-font-size: 30px;
     --ve-img-size: 50em;
     --footer-padding: 36px;
     --copyright-font-size: 1em;
     --links-padding: 10px;
     --links-img-size: none;
+    --to-up-height: 10vh;
+    --to-up-width: 5vw;
+    --to-up-font-size: 30px;
 
     /* visibility */
     --logo-text: visible;
@@ -80,7 +83,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 80px;
+  height: var(--header-height);
   width: 100%;
   background-color: var(--header-color);
   box-shadow: var(--header-shadow);
@@ -97,7 +100,7 @@ body {
 }
 
 .logo > img {
-  width: 1.5em;
+  width: var(--logo-img);
 }
 
 .logo > * {
@@ -105,7 +108,7 @@ body {
 }
 
 .logo > span {
-  font-size: 1em;
+  font-size: var(--logo-text-size);
   display: var(--logo-text);
 }
 
@@ -455,14 +458,14 @@ body:has(#sun-moon:checked) * {
     --iii: 25px 0 0 0;
     --iii1: 25px 0 0 0;
     --iii-size: 90vw;
-    --to-up-height: 35px;
-    --to-up-width: 35px;
-    --to-up-font-size: 15px;
     --ve-img-size: 11em;
     --footer-padding: 18px;
     --copyright-font-size: 0.5em;
     --links-padding: 1px;
     --links-img-size: 12px;
+    --to-up-height: 35px;
+    --to-up-width: 35px;
+    --to-up-font-size: 15px;
 
     /* visibility */
     --logo-text: none;
@@ -487,17 +490,17 @@ body:has(#sun-moon:checked) * {
     --email-container-size: 70vw;
     --email-padding: 10px;
     --email-font-size: 15px;
-    --email-icon-size: 6vh;
+    --email-icon-size: 8vw;
     --iii: 25px 0 0 0;
     --iii1: 25px 0 0 0;
     --iii-size: 90vw;
-    --to-up-height: 50px;
-    --to-up-width: 50px;
-    --to-up-font-size: 20px;
     --ve-img-size: 16em;
     --copyright-font-size: 0.6em;
     --links-img-size: 16px;
-    --links-padding: 5px;
+    --links-padding: 10px;
+    --to-up-height: 50px;
+    --to-up-width: 50px;
+    --to-up-font-size: 20px;
 
     --home-text: none;
     --logo-text: none;
@@ -525,18 +528,18 @@ body:has(#sun-moon:checked) * {
     --email-container-size: 70vw;
     --email-padding: 15px;
     --email-font-size: 20px;
-    --email-icon-size: 8vh;
+    --email-icon-size: 6vw;
     --iii: 25px 0 0 0;
     --iii1: 25px 0 0 0;
     --iii-size: 90vw;
-    --to-up-height: 50px;
-    --to-up-width: 50px;
-    --to-up-font-size: 20px;
     --ve-img-size: 28em;
     --featured-font-size: 20px;
     --copyright-font-size: 0.7em;
     --links-img-size: 15px;
     --links-padding: 10px;
+    --to-up-height: 50px;
+    --to-up-width: 50px;
+    --to-up-font-size: 20px;
 
     --logo-text: none;
     --home-text: none;
@@ -617,27 +620,29 @@ body:has(#sun-moon:checked) * {
 
 @media (min-width: 2000px) {
   :root {
-    --sun-size: 2vw;
-    --navbar-text-margin: 38px;
-    --navbar-font-size: 25px;
-    --main-padding: 10% 10% 0 10%;
-    --head-size: 96px;
-    --description: 36px;
+    --header-height: 100px;
+    --logo-img: 2em;
+    --logo-text-size: 1.5em;
+    --navbar-font-size: 30px;
+    --navbar-text-margin: 50px;
+    --head-size: 128px;
+    --description: 48px;
     --email-container-size: 30vw;
     --email-padding: 4%;
-    --email-font-size: 27px;
-    --email-icon-size: 4vh;
-    --featured-font-size: 18px;
-    --iii: 75px 400px 0 0;
-    --iii1: 75px 0 0 400px;
+    --email-font-size: 36px;
+    --email-icon-size: 2.2vw;
+    --featured-font-size: 26px;
+    --iii: 90px 400px 0 0;
+    --iii1: 90px 0 0 400px;
     --iii-size: none;
-    --to-up-height: 10vh;
-    --to-up-width: 5vw;
+    --ve-img-size: 80em;
+    --footer-padding: 42px;
+    --copyright-font-size: 1.3em;
+    --links-img-size: 30px;
+    --links-padding: 15px;
+    --to-up-height: 105px;
+    --to-up-width: 105px;
     --to-up-font-size: 30px;
-    --ve-img-size: 50em;
-    --copyright-font-size: 0.7em;
-    --links-img-size: 20px;
-    --links-padding: 10px;
 
     --logo-text: visible;
     --home-text: visible;

@@ -88,12 +88,14 @@ body {
   width: var(--sun-size);
   height: var(--sun-size);
   border-radius: var(--sun-size);
-  background-color: #ff0;
+  background-color: #dedede;
   transition: 0.5s;
 }
 
-.white-circle {
-  transform: translate(var(--sun-size));
+.white-circle {transform: translate(
+  calc(var(--sun-size) * 0.5),
+  calc(var(--sun-size) - var(--sun-size) * 1.2)
+);
   width: var(--sun-size);
   height: var(--sun-size);
   border-radius: 50%;
@@ -102,14 +104,11 @@ body {
 }
 
 #sun-moon:checked ~ .white-circle {
-  transform: translate(
-    calc(var(--sun-size) * 0.5),
-    calc(var(--sun-size) - var(--sun-size) * 1.2)
-  );
+  transform: translate(var(--sun-size));
 }
 
 #sun-moon:checked {
-  background-color: #000;
+  background-color: var(--glow);
 }
 
 body:has(#sun-moon:checked),

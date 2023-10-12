@@ -462,40 +462,20 @@ body:has(#sun-moon:checked) * {
 
 @media (min-width: 500px) {
   :root {
-    --sun-size: 5vw;
-  }
-}
-
-@media (min-width: 550px) {
-  :root {
     --sun-size: 4vw;
-    --navbar-text-margin: 19px;
-    --main-padding: 10% 5% 0 5%;
     --head-size: 40px;
     --description: 22px;
-    --email-container-size: 70vw;
     --email-padding: 15px;
     --email-font-size: 26px;
     --email-icon-size: 6vw;
-    --iii: 25px 0 0 0;
-    --iii1: 25px 0 0 0;
-    --iii-size: 90vw;
-    --ve-img-size: 28em;
     --featured-font-size: 20px;
+    --ve-img-size: 27em;
     --copyright-font-size: 0.7em;
-    --links-img-size: 15px;
     --links-padding: 10px;
+    --links-img-size: 15px;
     --to-up-height: 50px;
     --to-up-width: 50px;
     --to-up-font-size: 20px;
-
-    --logo-text: none;
-    --home-text: none;
-
-    --text-align: center;
-    --fetured-jus-con: center;
-    --email-link-jus-con: center;
-    --display: grid;
   }
 }
 

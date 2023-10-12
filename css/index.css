@@ -445,34 +445,19 @@ body:has(#sun-moon:checked) * {
 
 @media (min-width: 300px) {
   :root {
-    --sun-size: 8vw;
     --navbar-font-size: 20px;
     --navbar-text-margin: 19px;
-    --main-padding: 10% 5% 0 5%;
     --head-size: 28px;
     --description: 16px;
-    --email-container-size: 70vw;
     --email-padding: 10px;
     --email-font-size: 15px;
-    --email-icon-size: 8vw;
-    --iii: 25px 0 0 0;
-    --iii1: 25px 0 0 0;
-    --iii-size: 90vw;
     --ve-img-size: 16em;
     --copyright-font-size: 0.6em;
-    --links-img-size: 16px;
     --links-padding: 10px;
+    --links-img-size: 16px;
     --to-up-height: 50px;
     --to-up-width: 50px;
     --to-up-font-size: 20px;
-
-    --home-text: none;
-    --logo-text: none;
-
-    --text-align: center;
-    --fetured-jus-con: center;
-    --email-link-jus-con: center;
-    --display: grid;
   }
 }
 

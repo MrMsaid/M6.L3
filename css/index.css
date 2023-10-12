@@ -471,11 +471,6 @@ body:has(#sun-moon:checked) * {
     --featured-font-size: 20px;
     --ve-img-size: 27em;
     --copyright-font-size: 0.7em;
-    --links-padding: 10px;
-    --links-img-size: 15px;
-    --to-up-height: 50px;
-    --to-up-width: 50px;
-    --to-up-font-size: 20px;
   }
 }
 

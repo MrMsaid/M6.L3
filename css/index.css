@@ -20,43 +20,6 @@
   --email-hover-bg: #0000001a;
   --glow: #ffee00;
   --to-up-color: #0005;
-
-    /* sizes */
-    --sun-size: 2vw;
-    --header-height: 80px;
-    --logo-img: 1.5em;
-    --logo-text-size: 1em;
-    --navbar-font-size: 20px;
-    --navbar-text-margin: 38px;
-    --main-padding: 10% 10% 0 10%;
-    --head-size: 96px;
-    --description: 36px;
-    --email-container-size: 30vw;
-    --email-padding: 4%;
-    --email-font-size: 27px;
-    --email-icon-size: 8vw;
-    --featured-font-size: 18px;
-    --iii: 75px 400px 0 0;
-    --iii1: 75px 0 0 400px;
-    --iii-size: none;
-    --ve-img-size: 50em;
-    --footer-padding: 36px;
-    --copyright-font-size: 1em;
-    --links-padding: 10px;
-    --links-img-size: none;
-    --to-up-height: 10vh;
-    --to-up-width: 5vw;
-    --to-up-font-size: 30px;
-
-    /* visibility */
-    --logo-text: visible;
-    --home-text: visible;
-
-    /* align of items */
-    --text-align: start;
-    --fetured-jus-con: start;
-    --email-link-jus-con: start;
-    --display: flex;
 }
 
 a {
@@ -410,7 +373,6 @@ body:has(#sun-moon:checked) * {
   padding: 0 var(--links-padding);
 }
 
-
 .links > a img {
   width: var(--links-img-size);
   transition: 0.2s;
@@ -445,15 +407,17 @@ body:has(#sun-moon:checked) * {
   :root {
     /* sizes */
     --sun-size: 8vw;
+    --header-height: 80px;
+    --logo-img: 1.5em;
     --navbar-font-size: 15px;
     --navbar-text-margin: 9px;
     --main-padding: 10% 5% 0 5%;
-    --head-size: 19px;
+    --head-size: 18px;
     --description: 10px;
     --email-container-size: 70vw;
-    --email-padding: 10px;
-    --email-font-size: 14px;
-    --email-icon-size: 14px;
+    --email-padding: 8px;
+    --email-font-size: 10px;
+    --email-icon-size: 10px;
     --featured-font-size: 10px;
     --iii: 25px 0 0 0;
     --iii1: 25px 0 0 0;
@@ -523,11 +487,11 @@ body:has(#sun-moon:checked) * {
     --sun-size: 4vw;
     --navbar-text-margin: 19px;
     --main-padding: 10% 5% 0 5%;
-    --head-size: 28px;
-    --description: 16px;
+    --head-size: 40px;
+    --description: 22px;
     --email-container-size: 70vw;
     --email-padding: 15px;
-    --email-font-size: 20px;
+    --email-font-size: 26px;
     --email-icon-size: 6vw;
     --iii: 25px 0 0 0;
     --iii1: 25px 0 0 0;
@@ -551,37 +515,44 @@ body:has(#sun-moon:checked) * {
   }
 }
 
+@media (min-width: 800px) {
+  :root {
+
+    --logo-text: visible;
+    --home-text: visible;
+
+    --text-align: start;
+    --display: flex;
+  }
+}
+
 @media (min-width: 1000px) {
   :root {
     /* sizes */
     --sun-size: 2vw;
     --navbar-text-margin: 19px;
     --main-padding: 10% 5% 0 5%;
-    --head-size: 30px;
-    --description: 18px;
+    --head-size: 50px;
+    --description: 30px;
     --email-container-size: 70vw;
-    --email-padding: 0;
-    --email-font-size: 15px;
-    --email-icon-size: 3vh;
+    --email-padding: 10px;
+    --email-font-size: 25px;
+    --email-icon-size: 4vw;
     --iii: 75px 400px 0 0;
     --iii1: 75px 0 0 400px;
     --iii-size: 500px;
     --to-up-height: 50px;
     --to-up-width: 50px;
     --to-up-font-size: 20px;
-    --ve-img-size: 17em;
+    --ve-img-size: 37em;
     --copyright-font-size: 0.7em;
     --links-padding: 5px;
 
     /* visibility */
-    --logo-text: visible;
-    --home-text: visible;
 
     /* align of items */
-    --text-align: center;
     --fetured-jus-con: center;
     --email-link-jus-con: center;
-    --display: grid;
   }
 }
 
@@ -595,18 +566,18 @@ body:has(#sun-moon:checked) * {
     --email-container-size: 30vw;
     --email-padding: 4%;
     --email-font-size: 27px;
-    --email-icon-size: 4vh;
+    --email-icon-size: 3vw;
     --featured-font-size: 18px;
     --iii: 75px 400px 0 0;
     --iii1: 75px 0 0 400px;
     --iii-size: none;
-    --to-up-height: 10vh;
-    --to-up-width: 5vw;
-    --to-up-font-size: 30px;
     --ve-img-size: 50em;
     --copyright-font-size: 0.7em;
     --links-img-size: 20px;
     --links-padding: 10px;
+    --to-up-height: 80px;
+    --to-up-width: 80px;
+    --to-up-font-size: 30px;
 
     --logo-text: visible;
     --home-text: visible;

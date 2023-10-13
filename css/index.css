@@ -468,7 +468,7 @@ body:has(#sun-moon:checked) * {
     --email-padding: 15px;
     --email-font-size: 26px;
     --email-icon-size: 6vw;
-    --featured-font-size: 20px;
+    --featured-font-size: 18px;
     --ve-img-size: 27em;
     --copyright-font-size: 0.7em;
   }
@@ -488,49 +488,41 @@ body:has(#sun-moon:checked) * {
   :root {
     --sun-size: 2vw;
     --navbar-text-margin: 19px;
-    --head-size: 50px;
-    --description: 30px;
+    --head-size: 55px;
+    --description: 19.51px;
     --email-icon-size: 4vw;
     --iii: 75px 400px 0 0;
     --iii1: 75px 0 0 400px;
     --iii-size: 500px;
     --ve-img-size: 37em;
+  }
+}
 
-    --fetured-jus-con: center;
-    --email-link-jus-con: center;
+@media (min-width: 1200px) {
+  :root {
+    --head-size: 70px;
+    --description: 24.8px;
   }
 }
 
 @media (min-width: 1400px) {
   :root {
-    --sun-size: 2vw;
     --navbar-text-margin: 38px;
     --main-padding: 10% 10% 0 10%;
     --head-size: 93px;
     --description: 33px;
     --email-container-size: 30vw;
     --email-padding: 4%;
-    --email-font-size: 27px;
     --email-icon-size: 3vw;
-    --featured-font-size: 18px;
-    --iii: 75px 400px 0 0;
-    --iii1: 75px 0 0 400px;
     --iii-size: none;
     --ve-img-size: 50em;
-    --copyright-font-size: 0.7em;
     --links-img-size: 20px;
-    --links-padding: 10px;
     --to-up-height: 80px;
     --to-up-width: 80px;
     --to-up-font-size: 30px;
 
-    --logo-text: visible;
-    --home-text: visible;
-
-    --text-align: start;
     --fetured-jus-con: start;
     --email-link-jus-con: start;
-    --display: flex;
   }
 }
 

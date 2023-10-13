@@ -476,7 +476,6 @@ body:has(#sun-moon:checked) * {
 
 @media (min-width: 800px) {
   :root {
-
     --logo-text: visible;
     --home-text: visible;
 
@@ -487,29 +486,16 @@ body:has(#sun-moon:checked) * {
 
 @media (min-width: 1000px) {
   :root {
-    /* sizes */
     --sun-size: 2vw;
     --navbar-text-margin: 19px;
-    --main-padding: 10% 5% 0 5%;
     --head-size: 50px;
     --description: 30px;
-    --email-container-size: 70vw;
-    --email-padding: 10px;
-    --email-font-size: 25px;
     --email-icon-size: 4vw;
     --iii: 75px 400px 0 0;
     --iii1: 75px 0 0 400px;
     --iii-size: 500px;
-    --to-up-height: 50px;
-    --to-up-width: 50px;
-    --to-up-font-size: 20px;
     --ve-img-size: 37em;
-    --copyright-font-size: 0.7em;
-    --links-padding: 5px;
 
-    /* visibility */
-
-    /* align of items */
     --fetured-jus-con: center;
     --email-link-jus-con: center;
   }

@@ -92,10 +92,11 @@ body {
   transition: 0.5s;
 }
 
-.white-circle {transform: translate(
-  calc(var(--sun-size) * 0.5),
-  calc(var(--sun-size) - var(--sun-size) * 1.2)
-);
+.white-circle {
+  transform: translate(
+    calc(var(--sun-size) * 0.5),
+    calc(var(--sun-size) - var(--sun-size) * 1.2)
+  );
   width: var(--sun-size);
   height: var(--sun-size);
   border-radius: 50%;
@@ -408,6 +409,7 @@ body:has(#sun-moon:checked) * {
     --sun-size: 8vw;
     --header-height: 80px;
     --logo-img: 1.5em;
+    --logo-text-size: 0;
     --navbar-font-size: 15px;
     --navbar-text-margin: 9px;
     --main-padding: 10% 5% 0 5%;
@@ -476,6 +478,8 @@ body:has(#sun-moon:checked) * {
 
 @media (min-width: 800px) {
   :root {
+    --logo-text-size: default;
+
     --logo-text: visible;
     --home-text: visible;
 
@@ -535,29 +539,17 @@ body:has(#sun-moon:checked) * {
     --navbar-text-margin: 50px;
     --head-size: 128px;
     --description: 48px;
-    --email-container-size: 30vw;
-    --email-padding: 4%;
     --email-font-size: 36px;
     --email-icon-size: 2.2vw;
     --featured-font-size: 26px;
     --iii: 90px 400px 0 0;
     --iii1: 90px 0 0 400px;
-    --iii-size: none;
     --ve-img-size: 80em;
     --footer-padding: 42px;
     --copyright-font-size: 1.3em;
-    --links-img-size: 30px;
     --links-padding: 15px;
+    --links-img-size: 30px;
     --to-up-height: 105px;
     --to-up-width: 105px;
-    --to-up-font-size: 30px;
-
-    --logo-text: visible;
-    --home-text: visible;
-
-    --text-align: start;
-    --fetured-jus-con: start;
-    --email-link-jus-con: start;
-    --display: flex;
   }
 }

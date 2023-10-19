@@ -118,6 +118,32 @@ body:has(#sun-moon:checked) * {
   --to-up-color: #0005;
 }
 
+.burger-menu::before,
+.burger-menu::after {
+  content: ""; /* пустой контент */
+  background: #fff; /*цвет бургера*/
+  position: absolute; /* позиция для общего блока*/
+  width: 100%; /* ширина*/
+  height: 2px; /* толщина полосок бургера */
+}
+
+.burger-menu::before {
+  top: 0; /* расположение верхней линии бургера */
+}
+
+.burger-menu span {
+  /*средняя линия в виде span*/
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  top: 9px;
+  height: 2px;
+}
+
+.burger-menu::after {
+  bottom: 0; /* расположение нижней линии бургера */
+}
+
 .navbar {
   display: flex;
   list-style-type: none;
@@ -176,10 +202,6 @@ body:has(#sun-moon:checked) * {
 
 .burger-menu::after {
   bottom: 0;
-}
-
-.home {
-  display: var(--home-text);
 }
 
 .main {
@@ -445,13 +467,70 @@ body:has(#sun-moon:checked) * {
 
     /* visibility */
     --logo-text: none;
-    --home-text: none;
 
     /* align of items */
     --text-align: center;
     --fetured-jus-con: center;
     --email-link-jus-con: center;
     --display: grid;
+  }
+
+  .burger-menu {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+
+  .white-circle {
+    transition: 0.3s ease;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--header-color);
+    border: 1px solid #fff;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+
+  .burger-menu.active {
+    position: fixed;
+    z-index: 3;
+    transform: translateX(-40vw);
+    transition: 0.3s ease;
+  }
+
+  .burger-menu.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+    transition: 0.3s ease;
+  }
+
+  .burger-menu.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: 0.3s ease;
+  }
+
+  .burger-menu.active span {
+    transform: scale(0);
+  }
+
+  .navbar.active {
+    transform: translate(0);
+    transition: 0.3s ease;
   }
 }
 
@@ -485,6 +564,10 @@ body:has(#sun-moon:checked) * {
     --ve-img-size: 27em;
     --copyright-font-size: 0.7em;
   }
+
+  .burger-menu {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {
@@ -492,7 +575,6 @@ body:has(#sun-moon:checked) * {
     --logo-text-size: default;
 
     --logo-text: visible;
-    --home-text: visible;
 
     --text-align: start;
     --display: flex;

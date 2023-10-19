@@ -24,7 +24,6 @@
 
 a {
   text-decoration: none;
-  cursor: default;
 }
 
 html {
@@ -37,25 +36,17 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.center {
-  justify-content: center;
-}
-
 .header {
-  position: sticky;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   height: var(--header-height);
-  width: 100%;
   background-color: var(--header-color);
   box-shadow: var(--header-shadow);
-  transition: box-shadow 0.5s ease-in-out;
-  z-index: 1;
+  transition: box-shadow 2s ease-in-out;
 }
 
 .logo {
-  cursor: pointer;
   display: flex;
   align-items: center;
   font-size: 20px;
@@ -130,7 +121,7 @@ body:has(#sun-moon:checked) * {
 .navbar {
   display: flex;
   list-style-type: none;
-  font-weight: 700;
+  font-weight: 500;
   font-size: var(--navbar-font-size);
   line-height: 25px;
   letter-spacing: -0.5px;
@@ -143,22 +134,22 @@ body:has(#sun-moon:checked) * {
 .navbar__link {
   position: relative;
   margin: var(--navbar-text-margin);
-  cursor: pointer;
 }
 
 .navbar__link:after {
   content: "";
   position: absolute;
   bottom: -2px;
-  height: 3px;
+  height: 1px;
   width: 0;
   left: 0;
   background-color: var(--color);
   border-radius: 50px;
-  transition: 0.2s ease-in-out;
+  transition: 1s ease-out;
 }
 
 .navbar__link:hover:after {
+  transition: 0.3s ease-out;
   width: 100%;
 }
 
@@ -172,21 +163,21 @@ body:has(#sun-moon:checked) * {
 
 .heading {
   display: var(--display);
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .welcome {
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-size: var(--head-size);
   text-align: var(--text-align);
-  line-height: 109%;
+  line-height: 100%;
   letter-spacing: -0.5px;
 }
 
 .description {
-  font-weight: 600;
+  font-weight: bold;
   font-family: monospace;
   font-size: var(--description);
   text-align: var(--text-align);
@@ -208,21 +199,20 @@ body:has(#sun-moon:checked) * {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   margin: 30px;
   width: var(--email-container-size);
 }
 
 .email {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: var(--email-padding);
   width: 500px;
   background-color: var(--email-bg);
   border-radius: 4px;
   gap: 16px;
-  font-weight: 600;
+  font-weight: bold;
   font-size: var(--email-font-size);
   transition: 0.3s;
   text-shadow: 0.5px 0.5px 10px var(--email-shadow);
@@ -242,10 +232,9 @@ body:has(#sun-moon:checked) * {
 
 .featured {
   display: flex;
+  justify-content: var(--fetured-jus-con);
   align-items: center;
   gap: 21px;
-  cursor: pointer;
-  justify-content: var(--fetured-jus-con);
   height: 48px;
   padding-top: 25px;
 
@@ -348,7 +337,7 @@ body:has(#sun-moon:checked) * {
 
 .post-words {
   font-size: calc(var(--description) - 4px);
-  font-weight: 600;
+  font-weight: bold;
   color: var(--second-text);
   text-align: center;
 }
@@ -363,12 +352,10 @@ body:has(#sun-moon:checked) * {
 
 .copyright {
   color: var(--second-text);
-  font-weight: 600;
   font-size: var(--copyright-font-size);
 }
 
 .links > a {
-  cursor: pointer;
   text-decoration: none;
   padding: 0 var(--links-padding);
 }
@@ -393,7 +380,6 @@ body:has(#sun-moon:checked) * {
   width: var(--to-up-width);
   border-radius: 50em;
   font-size: var(--to-up-font-size);
-  cursor: pointer;
   background-color: var(--to-up-color);
   transition: 0.5s;
   z-index: 2;

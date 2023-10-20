@@ -488,10 +488,9 @@ body:has(#sun-moon:checked) * {
 }
 
 @media (min-width: 0px) and (max-width: 500px) {
-  
-
   .navbar {
     position: fixed;
+    z-index: 3;
     top: 0;
     right: 0;
     width: 50vw;

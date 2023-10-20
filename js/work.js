@@ -1,0 +1,1 @@
+$('.pic-container').slick();
